@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AM Cosmetic Hub | Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin/style.css') }}" />
+</head>
+<body class="amch-body admin-page">
+    <div id="amch-background" aria-hidden="true"></div>
+
+    <header class="page-header" data-admin-header></header>
+
+    <main class="page-main">
+        <section class="page-section" data-admin-section></section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-inner" data-admin-footer>
+            <p>HARKOV CORPORATION PRESENTS</p>
+            <p>Mae Ann Laurel | Alixa Rose Gudelosao</p>
+        </div>
+    </footer>
+ 
+    <script src="{{ url_for('static', filename='background.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/pending.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/ordered.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/reviews.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/products.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/script.js') }}"></script>
+</body>
+</html>

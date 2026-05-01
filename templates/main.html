@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AM Cosmetic Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='main/style.css') }}" />
+</head>
+<body class="amch-body main-page">
+    <div id="amch-background" aria-hidden="true"></div>
+
+    <header class="page-header" data-main-header></header>
+
+    <main class="page-main">
+        <section class="page-section">
+            <div data-app-status class="am-app-status"></div>
+            <section data-section-name="home" data-main-home></section>
+            <section data-section-name="products" data-main-products hidden></section>
+            <section data-section-name="track" data-main-track hidden></section>
+        </section>
+    </main>
+
+    <footer class="page-footer" data-main-footer>
+        <div class="footer-inner">
+            <p>HARKOV CORPORATION PRESENTS</p>
+            <p>Mae Ann Laurel | Alixa Rose Gudelosao</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='background.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='main/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='main/payment.js') }}"></script>
+    <script src="{{ url_for('static', filename='main/home.js') }}"></script>
+    <script src="{{ url_for('static', filename='main/products.js') }}"></script>
+    <script src="{{ url_for('static', filename='main/track.js') }}"></script>
+    <script src="{{ url_for('static', filename='main/script.js') }}"></script>
+</body>
+</html>
